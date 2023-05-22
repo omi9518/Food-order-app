@@ -1,0 +1,111 @@
+.form-wrapper {
+    text-align: center;
+    align-items: center;
+    border: 2px solid #bd7b007c;
+    padding: 10px;
+    box-shadow: 6px 4px #bd7800;
+    margin-top: 25%;
+    width: 100%;
+    background-color: rgba(255, 249, 240, 0.621);
+    /* border-radius: 10px; */
+}
+
+/* === BASE HEADING === */ 
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #666666;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    margin: 20px 0px;
+  }
+  
+  h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  h1 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  /* === HEADING STYLE #1 === */
+  .one h1 {
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #9b8228;
+  }
+  .one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #875c00;
+  }
+
+
+
+.submitBtn:hover {
+    color: #fffdfc !important;
+    transition: all 0.9s;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: 1px solid rgb(87, 56, 0) !important;
+    background: linear-gradient(217deg, rgba(185, 133, 4, 0.767), rgba(235, 155, 5, 0.815) 70.71%), 
+    linear-gradient(127deg, rgba(240, 193, 52, 0.337), rgba(250, 186, 84, 0.793) 70.71%)   
+}
+.submitBtn span {
+    cursor: pointer;
+    /* display: inline-block; */
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+  .submitBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .submitBtn:hover span {
+    padding-right: 15px;
+    word-spacing: 2px !important;
+  }
+  
+  .submitBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .valid-input {
+    border: 2px solid green;
+  }
+  
+  .invalid-input {
+    border: 2px solid red;
+  }
